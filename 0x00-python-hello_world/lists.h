@@ -5,11 +5,10 @@
 
 /**
  * struct listint_s - singly linked list
- * @n: integer
- * @next: points to the next node
+ * @n: int
+ * @next: points the next node
  *
- * Description: singly linked list node structure
- * for ALX project
+ * Description: singly linked list node struct
  */
 typedef struct listint_s
 {
