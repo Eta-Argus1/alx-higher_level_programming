@@ -1,5 +1,5 @@
-#!/usr/bin/python3
-import random
+#!/usr/bin/python
+import random # noqa: E402
 number = random.randint(-10, 10)
 import random
 number = random.randint(-10, 10)
