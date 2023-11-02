@@ -1,6 +1,6 @@
 #!/usr/bin/python3
-import sys
-count = len(sys.argv) - 1
+from sys import argv
+count = len(argv)
 if count == 0:
     print("0 arguments.")
 elif count == 1:
