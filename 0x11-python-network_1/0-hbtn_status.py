@@ -1,12 +1,15 @@
 #!/usr/bin/python3
-from urllib.request import Request, urlopen
+"""
+a Python script that fetches https://alx-intranet.hbtn.io/status
+The body of the response must be displayed like this (tabulation before -)"""
+
+import urllib.request
 
 if __name__ == "__main__":
-    url = "https://intranet.hbtn.io/status"
-    req = Request(url)
-    with urlopen(req) as response:
-        page = response.read()
-    print("Body response:")
-    print("\t- type: {}".format(type(page)))
-    print("\t- content: {}".format(page))
-    print("\t- utf8 content: {}".format(page.decode("utf-8")))
+    request = urllib.request.Request("https://alx-intranet.hbtn.io/status")
+    with urllib.request.urlopen(request) as response:
+        html = response.read()
+        print("Body response:")
+        print("\t- type:", type(html))
+        print("\t- content:", html)
+        print("\t- utf8 content: {}".format(html.decode('utf-8')))
